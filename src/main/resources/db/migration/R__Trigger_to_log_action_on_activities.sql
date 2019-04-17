@@ -1,4 +1,5 @@
 DROP TRIGGER IF EXISTS log_delete_activity ON activity;
+
 CREATE OR REPLACE FUNCTION log_delete_activity() RETURNS TRIGGER AS $$
 BEGIN
 	INSERT INTO action_log 
