@@ -30,8 +30,6 @@ $$ LANGUAGE plpgsql;
  $$ LANGUAGE plpgsql;
 
 
-
-
 DROP TRIGGER IF EXISTS log_insert_delete_registration ON registration;
 
 CREATE OR REPLACE FUNCTION log_insert_delete_registration() RETURNS TRIGGER AS $$
